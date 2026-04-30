@@ -26,3 +26,7 @@ yarn start:dev
 ## IMPORTANTE
 
 Antes de cargar tu API a algún servidor como __Render__, cambiar la variable de entorno __STAGE__ a __prod__. También en __app.module.ts__ descomentar la línea ```// ssl: configService.get('STAGE') === 'prod',``` y borrar o comentar la línea ```ssl: false,```
+
+### Migraciones
+
+Al momento de ejecutar ```yarn migration:generate``` deben poner la ruta del directorio __migrations__ y en nombre de la entidad ```yarn migration:generate src/migrations/aula```
